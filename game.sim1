@@ -1,0 +1,67 @@
+<circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega328-2" mainComp="false" Show_id="true" Show_Val="false" Pos="376,868" rotation="-90" hflip="1" vflip="1" label="mega328-2" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../../development/microchip/avr-workspace/atmega328/ili9341-game/main_m328.hex" Auto_Load="true" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" />
+
+<item itemtype="KeyPad" CircId="KeyPad-87" mainComp="false" Show_id="false" Show_Val="false" Pos="328,740" rotation="0" hflip="1" vflip="1" label="KeyPad-87" idLabPos="-8,-16" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="5 _Buttons" Cols="1 _Buttons" Key_Labels="wasd " />
+
+<item itemtype="Ground" CircId="Ground-98" mainComp="false" Show_id="false" Show_Val="false" Pos="328,900" rotation="0" hflip="1" vflip="1" label="Ground-98" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ili9341" CircId="Ili9341-110" mainComp="false" Show_id="true" Show_Val="false" Pos="508,432" rotation="0" hflip="1" vflip="1" label="Ili9341-110" idLabPos="-32,-180" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="LAnalizer" CircId="LAnalizer-116" mainComp="false" Show_id="false" Show_Val="false" Pos="244,656" rotation="0" hflip="1" vflip="1" label="LAnalizer-116" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _Pixels" Basic_Y="135 _Pixels" BufferSize="100000 Samples" TimDiv="5375358" TimPos="-8118127929" VolDiv="0.15" Tunnels=",,,,,,,," Trigger="4" TimeStep="1000 _ps" AutoExport="false" TresholdR="2.5 V" TresholdF="2.5 V" />
+
+<item itemtype="Node" CircId="Node-137" mainComp="false" Pos="528,828" />
+
+<item itemtype="Node" CircId="Node-140" mainComp="false" Pos="480,820" />
+
+<item itemtype="Node" CircId="Node-143" mainComp="false" Pos="472,816" />
+
+<item itemtype="Node" CircId="Node-146" mainComp="false" Pos="464,812" />
+
+<item itemtype="Node" CircId="Node-149" mainComp="false" Pos="456,804" />
+
+<item itemtype="Connector" uid="connector-150" startpinid="mega328-2-PORTC0" endpinid="KeyPad-87-Pin0" pointList="424,828,424,748,344,748" />
+
+<item itemtype="Connector" uid="connector-151" startpinid="mega328-2-PORTC1" endpinid="KeyPad-87-Pin1" pointList="416,828,416,764,344,764" />
+
+<item itemtype="Connector" uid="connector-152" startpinid="mega328-2-PORTC2" endpinid="KeyPad-87-Pin2" pointList="408,828,408,780,344,780" />
+
+<item itemtype="Connector" uid="connector-153" startpinid="mega328-2-PORTC3" endpinid="KeyPad-87-Pin3" pointList="400,828,400,796,344,796" />
+
+<item itemtype="Connector" uid="connector-154" startpinid="mega328-2-PORTC4" endpinid="KeyPad-87-Pin4" pointList="392,828,392,812,344,812" />
+
+<item itemtype="Connector" uid="connector-155" startpinid="Ground-98-Gnd" endpinid="KeyPad-87-Pin5" pointList="328,884,328,828" />
+
+<item itemtype="Connector" uid="connector-156" startpinid="mega328-2-PORTB1" endpinid="Node-137-0" pointList="488,828,528,828" />
+
+<item itemtype="Connector" uid="connector-157" startpinid="mega328-2-PORTB3" endpinid="Node-143-0" pointList="472,828,472,816" />
+
+<item itemtype="Connector" uid="connector-158" startpinid="mega328-2-PORTB4" endpinid="Node-146-0" pointList="464,828,464,812" />
+
+<item itemtype="Connector" uid="connector-159" startpinid="mega328-2-PORTB5" endpinid="Node-149-0" pointList="456,828,456,804" />
+
+<item itemtype="Connector" uid="connector-160" startpinid="mega328-2-PORTB2" endpinid="Node-140-0" pointList="480,828,480,820" />
+
+<item itemtype="Connector" uid="connector-161" startpinid="Node-137-2" endpinid="Ili9341-110-PinDC" pointList="528,828,528,616,468,616" />
+
+<item itemtype="Connector" uid="connector-162" startpinid="Node-137-1" endpinid="LAnalizer-116-Pin7" pointList="528,828,528,704,156,704" />
+
+<item itemtype="Connector" uid="connector-163" startpinid="Node-140-2" endpinid="Ili9341-110-PinCS" pointList="480,820,480,616,452,616" />
+
+<item itemtype="Connector" uid="connector-164" startpinid="Node-140-1" endpinid="LAnalizer-116-Pin6" pointList="480,820,156,820,156,688" />
+
+<item itemtype="Connector" uid="connector-165" startpinid="Node-143-2" endpinid="Ili9341-110-PinMosi" pointList="472,816,472,616,476,616" />
+
+<item itemtype="Connector" uid="connector-166" startpinid="Node-143-1" endpinid="LAnalizer-116-Pin5" pointList="472,816,156,816,156,672" />
+
+<item itemtype="Connector" uid="connector-167" startpinid="Node-146-2" endpinid="Ili9341-110-PinRst" pointList="464,812,464,616,460,616" />
+
+<item itemtype="Connector" uid="connector-168" startpinid="Node-146-1" endpinid="LAnalizer-116-Pin4" pointList="464,812,156,812,156,656" />
+
+<item itemtype="Connector" uid="connector-169" startpinid="Node-149-2" endpinid="Ili9341-110-PinSck" pointList="456,804,456,616,484,616" />
+
+<item itemtype="Connector" uid="connector-170" startpinid="Node-149-1" endpinid="LAnalizer-116-Pin3" pointList="456,804,456,640,156,640" />
+
+<item itemtype="Connector" uid="connector-171" startpinid="mega328-2-PORTB0" endpinid="LAnalizer-116-Pin0" pointList="488,876,132,876,132,592,156,592" />
+
+</circuit>
